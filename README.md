@@ -113,6 +113,8 @@ This would substitute the first two characters of the description into the `.ofs
 
 The barcodes printed by the HTS do include Wear fields, but examination of the presetter binary shows that they're hard-coded to 0 in a string constant. The DataMatrix barcode format is easy to encode. A bit of future work may be to convert a populated `.ofs` file into a number of stickers to be printed at once.
 
+It would be interesting to see if the postprocessor's expression language is robust enough to re-implement the [PCool Auto Set](https://www.haascnc.com/content/dam/haascnc/videos/bonus-content/ep44-p-cool/pcool_set.nc) program. There do appear to be some kind of macro-variables in the processor language that could be used to tweak the output on a per-machine basis.
+
 ## Other NGC tricks
 
 The NGC has an integrated SMB (Windows) file server as well as an [integrated VNC server](https://youtu.be/ye1m8Y_LmXU).
